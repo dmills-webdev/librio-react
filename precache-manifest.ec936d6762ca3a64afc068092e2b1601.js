@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85276e13b0295983cffff12416a8e337",
+    "revision": "5c9549484f5ec359b9f5c02c57fd720b",
     "url": "/librio-react/index.html"
   },
   {
