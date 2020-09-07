@@ -19,7 +19,7 @@ const App = () => {
   }
 
   const removeBookFromLibrary = (isbn) => {
-    let reply = window.confirm("Are you sure?")
+    let reply = window.confirm("Are you sure you want to remove that?")
     if (reply === true) {
       makeChangeToLibrary(
         library.filter( book => book.isbn !== isbn )

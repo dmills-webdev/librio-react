@@ -48,10 +48,16 @@
       padding: 5px;
     }
     span.un-read {
-      background: #f7bebe;
+      background: hsla(0, 78%, 85%, 1);
+    }
+    span.un-read:hover {
+        background: hsla(0, 78%,80%, 1);
     }
     span.read {
-      background: #a8e7a8;
+      background: hsla(120, 57%, 78%, 1);
+    }
+    span.read:hover {
+        background: hsla(120, 57%, 70%, 1);
     }
   }
 }

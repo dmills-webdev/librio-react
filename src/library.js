@@ -30,6 +30,14 @@ let library =  [
     genre: ["Novel", "Legal"],
     pages: "281",
     hasBookBeenRead: true
+  },
+  {
+    isbn: 9780436350222,
+    name: "Business Secrets of the Pharohs",
+    author: "Mark Crorigan",
+    genre: ["Business", "History"],
+    pages: "319",
+    hasBookBeenRead: true
   }
 ]
 
