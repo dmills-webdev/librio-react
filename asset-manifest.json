@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/librio-react/static/css/main.48890a1c.chunk.css",
+    "main.js": "/librio-react/static/js/main.210a5239.chunk.js",
+    "main.js.map": "/librio-react/static/js/main.210a5239.chunk.js.map",
+    "runtime-main.js": "/librio-react/static/js/runtime-main.b17a9e86.js",
+    "runtime-main.js.map": "/librio-react/static/js/runtime-main.b17a9e86.js.map",
+    "static/js/2.1a2a5171.chunk.js": "/librio-react/static/js/2.1a2a5171.chunk.js",
+    "static/js/2.1a2a5171.chunk.js.map": "/librio-react/static/js/2.1a2a5171.chunk.js.map",
+    "index.html": "/librio-react/index.html",
+    "precache-manifest.324e343c1cd4a86fa9192dae8c651bc5.js": "/librio-react/precache-manifest.324e343c1cd4a86fa9192dae8c651bc5.js",
+    "service-worker.js": "/librio-react/service-worker.js",
+    "static/css/main.48890a1c.chunk.css.map": "/librio-react/static/css/main.48890a1c.chunk.css.map",
+    "static/js/2.1a2a5171.chunk.js.LICENSE.txt": "/librio-react/static/js/2.1a2a5171.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b17a9e86.js",
+    "static/js/2.1a2a5171.chunk.js",
+    "static/css/main.48890a1c.chunk.css",
+    "static/js/main.210a5239.chunk.js"
+  ]
+}
