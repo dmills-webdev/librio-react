@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9249b1a0d13354bad8671155c02421ed",
+    "revision": "e972465075e1f938921c4c688780ef6d",
     "url": "/librio-react/index.html"
   },
   {
-    "revision": "eae11345d625d0f7ae27",
+    "revision": "62fdc43dd8403ff575f3",
     "url": "/librio-react/static/css/main.48890a1c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/librio-react/static/js/2.d00dcfda.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eae11345d625d0f7ae27",
-    "url": "/librio-react/static/js/main.f491ca99.chunk.js"
+    "revision": "62fdc43dd8403ff575f3",
+    "url": "/librio-react/static/js/main.4cf009ba.chunk.js"
   },
   {
     "revision": "493d822aa4158718f035",
