@@ -13,12 +13,13 @@ const AddBookForm = ({ addBookToLibrary }) => {
     hasBookBeenRead: false
   }
   let [ bookToAdd, modifyBook  ] = useState(blankBook)
+  let tempBook
 
 /////////////////////////////////////////////////////////////////// Form handler
   const handleChange = (e) => {
     let valueToChange = e.target.name
     let newValue = e.target.value
-    let tempBook = bookToAdd
+    tempBook = bookToAdd
 
     if (valueToChange === "isbn") { // Handle ISBN entry and prevents empty string conflict
       for (let property in tempBook) {
@@ -59,12 +60,19 @@ const AddBookForm = ({ addBookToLibrary }) => {
   }
 
 ///////////////////////////////////////////////////////////////// Form submitter
+  const formatGenreTags = () => {
+    let genres = bookToAdd.genre
+    let genreTags = genres.split(",");
+    tempBook = {
+      ...bookToAdd,
+      genre: genreTags
+    }
+    return tempBook
+  }
+
   const finaliseBook = () => {
-    let finalBook = bookToAdd
-    modifyBook(
-      blankBook
-    )
-    addBookToLibrary( finalBook )
+    addBookToLibrary( formatGenreTags() )
+    modifyBook( blankBook )
   }
 
 ///////////////////////////////////////////////////////////////////// Close Form

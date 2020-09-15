@@ -1,15 +1,27 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import BookCard from "./BookCard"
 import AddBookForm from "./AddBookForm"
 import Button from "./Button"
-import initialLibrary from "./library"
+import defaultLibrary from "./library"
 
 import "./app.scss"
 
 const App = () => {
-  let [ library, makeChangeToLibrary ] = useState(initialLibrary)
+// Initialise library
+  const libraryStorage = JSON.parse(window.localStorage.getItem('libraryStorage'))
+  let initialLibrary = defaultLibrary
+  // If there is an existing stored library then use that over the default one.
+  if (libraryStorage) {
+    initialLibrary = libraryStorage
+  }
 
+  let [ library, makeChangeToLibrary ] = useState(initialLibrary)
+  useEffect(() => {
+    window.localStorage.setItem("libraryStorage", JSON.stringify(library))
+  },[library])
+
+// Methods
   const addBookToLibrary = (bookToAdd) => {
     let newLibrary = [...library]
     newLibrary.push(bookToAdd)

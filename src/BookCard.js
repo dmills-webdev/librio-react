@@ -7,7 +7,7 @@ import "./book-card.scss"
 const BookCard = ({ isbn, name, author, genre, pages, hasBookBeenRead, remove, toggle }) => {
 
   function formatGenres() {
-    if (genre) {
+    if (Array.isArray(genre)) {
       return (
         genre.map(item => {
           return (
@@ -19,7 +19,7 @@ const BookCard = ({ isbn, name, author, genre, pages, hasBookBeenRead, remove, t
       )
     }
     else {
-      return false
+      return genre
     }
 
   }
