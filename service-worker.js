@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/librio-react/precache-manifest.6146d9b636539c51773339a40b10c31d.js"
+  "/librio-react/precache-manifest.35ee36bbbdf3a8c6e4d0af070af9f3a9.js"
 );
 
 self.addEventListener('message', (event) => {
