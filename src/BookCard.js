@@ -8,10 +8,13 @@ const BookCard = ({ isbn, name, author, genre, pages, hasBookBeenRead, remove, t
 
   function formatGenres() {
     if (Array.isArray(genre)) {
+      let i = 0
       return (
         genre.map(item => {
+          i++
           return (
             <GenreTag
+              key={`${isbn}-tag-${i}`}
               tag={item}
             />
           )
@@ -21,7 +24,6 @@ const BookCard = ({ isbn, name, author, genre, pages, hasBookBeenRead, remove, t
     else {
       return genre
     }
-
   }
 
   return (

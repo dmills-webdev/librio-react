@@ -12,7 +12,7 @@
 @media (min-width: $breakpoint-pc) {
   .book-cards-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px ,1fr));
     grid-gap: 20px;
 
     padding-top: 20px;
@@ -31,6 +31,7 @@
   box-shadow: 0 0 10px 1px hsla(0, 100%, 12%, 0.5);
 
   @media (min-width: $breakpoint-pc) {
+    height: 100%;
     margin-top: 0;
   }
 
