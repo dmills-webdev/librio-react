@@ -84,32 +84,38 @@ const AddBookForm = ({ addBookToLibrary }) => {
 //////////////////////////////////////////////////////////////////////////// JSX
   return(
     <div id="add-book-container">
-      <h1>New book</h1>
-      <button className="close-form" onClick={() => closeForm()}>x</button>
-      <form className="add-book-form">
-        <div>
-          <section className="labels">
-            <label htmlFor="name">Title</label>
-            <label htmlFor="author">Author</label>
-            <label htmlFor="genre">Genre</label>
-            <label htmlFor="pages">Pages</label>
-            <label htmlFor="isbn">ISBN</label>
-            <label htmlFor="hasBookBeenRead">Read?</label>
-          </section>
 
-          <section className="inputs">
-            <input name="name" type="text" value={bookToAdd.name} onChange={handleChange}/>
-            <input name="author" type="text" value={bookToAdd.author} onChange={handleChange}/>
-            <input name="genre" type="text" value={bookToAdd.genre} onChange={handleChange}/>
-            <input name="pages" type="text" value={bookToAdd.pages} onChange={handleChange}/>
-            <input name="isbn" type="text" value={bookToAdd.isbn} onChange={handleChange}/>
-            <input className="checkbox" name="hasBookBeenRead" type="checkbox" value={bookToAdd.hasBookBeenRead} onChange={handleChange}/>
-          </section>
-        </div>
-        <button type="button" onClick={() => finaliseBook()}>Add to Librio</button>
+      <header>
+        <h1>New book</h1>
+        <button className="close-form" onClick={() => closeForm()}>x</button>
+      </header>
 
-      </form>
+      <div className="subcontainer">
+        <form className="add-book-form">
+          <div>
+            <section className="labels">
+              <label htmlFor="name">Title</label>
+              <label htmlFor="author">Author</label>
+              <label htmlFor="genre">Genres</label>
+              <label htmlFor="pages">Pages</label>
+              <label htmlFor="isbn">ISBN</label>
+              <label htmlFor="hasBookBeenRead">Read?</label>
+            </section>
+
+            <section className="inputs">
+              <input name="name" type="text" value={bookToAdd.name} onChange={handleChange}/>
+              <input name="author" type="text" value={bookToAdd.author} onChange={handleChange}/>
+              <input name="genre" type="text" value={bookToAdd.genre} onChange={handleChange}/>
+              <input name="pages" type="text" value={bookToAdd.pages} onChange={handleChange}/>
+              <input name="isbn" type="text" value={bookToAdd.isbn} onChange={handleChange}/>
+              <input className="checkbox" name="hasBookBeenRead" type="checkbox" value={bookToAdd.hasBookBeenRead} onChange={handleChange}/>
+            </section>
+          </div>
+          <button type="button" onClick={() => finaliseBook()}>Add to Librio</button>
+        </form>
+      </div>
     </div>
+
   )
 }
 

@@ -8,28 +8,45 @@
   position: relative;
 
   width: 100%;
-  padding: 20px;
-  border-radius: 10px;
   margin: 0 auto;
+  overflow: hidden;
 
-  color: $white;
-  background: hsla(354, 45%, 45%, 0.6);
-  box-shadow: 3px 3px 4px hsla(354, 45%, 15%, 1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px hsla(0, 100%, 15%, 0.5);
+
 
   @media (min-width: $breakpoint-pc) {
     width:33.33%;
+    min-width: 500px;
+    box-shadow: 0 0 10px 2px hsla(0, 100%, 15%, 0.6);
   }
 
-  h1 {
-    font-size: 1.2em;
-    text-align: center;
+  header {
+    background: hsla(354, 45%, 45%, 0.6);
+    color: $white;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-weight: normal;
+      font-size: 1.2em;
+    }
+  }
+
+  .subcontainer {
+    width: 100%;
+
+    background: $white;
+    color: $raspberry;
+    padding: 10px;
   }
 }
 
 .close-form {
   position: absolute;
   right: 10px;
-  top: 10px;
 }
 
 .add-book-form {
@@ -48,6 +65,7 @@
 
     margin-right: 20px;
     label {
+      text-align: center;
       line-height: 1.5em;
     }
   }
@@ -59,8 +77,9 @@
       line-height: 1.5em;
       width: 100%;
       border: none;
-      border-top: 1px solid transparent;
-      border-bottom: 1px solid #001628;
+      border-top: 0px solid transparent;
+      border-bottom: 2px solid $raspberry;
+      background: hsla(0, 100%, 98%, 1);
     }
     .checkbox {
       margin-top: 2px;
