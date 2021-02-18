@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Librio
+
+Librio is an app allowing users to catalogue their book collections so they have an easy digital record of their own personal library. It's made with Javascript and React and makes use of the brower's localStorage for persistence accross sessions.
+
+-------------------------------------
 
 ## Available Scripts
 
